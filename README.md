@@ -1,19 +1,35 @@
-# 🎈 Blank app template
+# Mining Worker Safety Monitoring System
 
-A simple Streamlit app template for you to modify!
+![Mining Safety Monitor Dashboard](assets/dashboard.png)
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## Overview
 
-### How to run it on your own machine
+This project implements an AI-based real-time monitoring system for mining worker safety using data from wearable devices. The system analyzes sensor data to detect potential health and safety risks, including:
 
-1. Install the requirements
+- Fatigue
+- Harmful gas exposure
+- Physical stress/injury risk
+- Heat stress
+- Multiple concurrent risks
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+## Features
 
-2. Run the app
+- Real-time monitoring of multiple workers
+- Multi-class risk classification using LSTM deep learning
+- Interactive dashboard with live updates
+- Historical data tracking and visualization
+- Alert system with recommendations for each risk type
+- Simulation mode for demonstration purposes
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+## System Architecture
+
+![System Architecture](assets/system_architecture.png)
+
+The system consists of:
+1. Wearable devices collecting sensor data (simulated in this demo)
+2. Deep learning model for risk classification
+3. Real-time monitoring dashboard
+
+## Installation
+
+1. Clone this repository:
